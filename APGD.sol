@@ -6,5 +6,6 @@ contract PhysicalActivityMonitorGame {
 
     struct DailyActivity{
         uint256 steps;
+        uint256 calories;
     }
 }
