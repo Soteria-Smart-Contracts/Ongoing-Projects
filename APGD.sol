@@ -9,6 +9,5 @@ contract PhysicalActivityMonitorGame {
         uint256 calories;
         uint256 distance;
         uint256 floors;
-        uint256 elevation;
     }
 }
