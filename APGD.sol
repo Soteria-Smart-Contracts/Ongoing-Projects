@@ -10,6 +10,5 @@ contract PhysicalActivityMonitorGame {
         uint256 distance;
         uint256 floors;
         uint256 activeMinutes;
-        uint256 sedentaryMinutes;
     }
 }
