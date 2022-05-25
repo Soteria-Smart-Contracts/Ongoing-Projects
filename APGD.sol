@@ -11,6 +11,11 @@ contract PhysicalActivityMonitorGame {
         uint256 calories;
         uint256 distance;
         uint256 activeMinutes;
-        
+        uint256 sedentaryMinutes;
+        uint256 activityCalories;
+        uint256 distanceCalories;
+        uint256 floorsCalories;
+        uint256 elevationCalories;
+        uint256 stepsCalories;
     }
 }
