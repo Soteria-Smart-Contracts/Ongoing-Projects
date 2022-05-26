@@ -2,18 +2,7 @@
 pragma solidity ^0.8.7;
 
 contract PhysicalActivityMonitorGame {
-    mapping(address => uint256) public balance;
+    //Helo
 
-    struct DailyActivity{
-        uint256 steps;
-        uint256 floors;
-        uint256 elevation;
-        uint256 calories;
-        uint256 distance;
-        uint256 activeMinutes;
-        uint256 sedentaryMinutes;
-        uint256 activityCalories;
-        uint256 distanceCalories;
-        uint256 floorsCalories;
-    }
+
 }
