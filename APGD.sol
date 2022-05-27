@@ -64,9 +64,6 @@ contract AGPD {
             //Other
             TokensMinted = Minutes * 7;
         }
-        else{
-            TokensMinted = 0;
-        }
 
     }
 
