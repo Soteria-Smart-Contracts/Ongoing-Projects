@@ -38,11 +38,11 @@ contract AGPD {
         require(Minutes >= 1);
         if(ActivityType == 1){
             //Walking
-            TokensMinted = Minutes * 1;
+            TokensMinted = Minutes * 3;
         }
         else if(ActivityType == 2){
             //Running
-            TokensMinted = Minutes * 2;
+            TokensMinted = Minutes * 6;
         }
         else if(ActivityType == 3){
             //Cycling
