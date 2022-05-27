@@ -8,9 +8,15 @@ import "StandardERC20.sol";
 contract PhysicalActivityMonitorGame {
 
 
+    function SendToken() public returns(bool success){
+        
+    }
+
+
     
 
 
 
 
+}
 
