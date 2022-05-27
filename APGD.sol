@@ -53,12 +53,15 @@ contract AGPD {
             TokensMinted = Minutes * 4;
         }
         else if(ActivityType == 5){
+            //Gym Workout
             TokensMinted = Minutes * 5;
         }
         else if(ActivityType == 6){
+            //Team Sports
             TokensMinted = Minutes * 6;
         }
         else if(ActivityType == 7){
+            //Other
             TokensMinted = Minutes * 7;
         }
         else{
