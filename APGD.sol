@@ -8,7 +8,6 @@ import "StandardERC20.sol";
 contract AGPD {
     address Zero = address(0);
 
-    //Activity
     
 
     //Struct Declarations
@@ -33,7 +32,8 @@ contract AGPD {
     // 7: Other
 
     //Mapping Declarations
-    mapping(address => ActivityHistory) Tracking;
+    mapping (address => ActivityHistory) Tracking;
+    mapping (uint256 => uint256) TypeMultiplier;
 
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
         require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
