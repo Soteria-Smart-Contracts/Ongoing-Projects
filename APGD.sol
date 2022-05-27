@@ -6,7 +6,7 @@ pragma solidity ^0.8.7;
 import "StandardERC20.sol";
 
 contract AGPD {
-    address HealthyEthersToken = address(0);
+    address HealthyEthers = address(0);
 
     constructor(){
         //Deployment Constructors
@@ -51,6 +51,7 @@ contract AGPD {
         require(Minutes >= 1);
         
         uint256 TokensEarned = TypeMultiplier[ActivityType] * Minutes;
+        
 
 
 
