@@ -50,7 +50,7 @@ contract AGPD {
         require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
         require(Minutes >= 1);
         
-        
+        uint256 TokensEarned = TypeMultiplier[ActivityType] * Minutes;
 
     }
 
