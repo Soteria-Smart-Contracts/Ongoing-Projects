@@ -38,6 +38,9 @@ contract AGPD {
         require(Minutes >= 1);
         if(ActivityType == 1){
             //Walking
+            //get calories burned from walking in per hour and divide by 100 to get tokens to mint; 
+            //calculate tokens minted
+            
             TokensMinted = Minutes * 1;
         }
         else if(ActivityType == 2){
