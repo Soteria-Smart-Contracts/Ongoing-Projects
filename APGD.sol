@@ -8,7 +8,6 @@ import "StandardERC20.sol";
 contract AGPD {
     address Zero = address(0);
     
-    
 
     //Struct Declarations
     struct ActivityHistory{
@@ -37,6 +36,7 @@ contract AGPD {
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
         require(ActivityType <= 7 && ActivityType >= 1);
         require(Minutes >= 1);
+        
 
     }
 
