@@ -34,7 +34,7 @@ contract AGPD {
     mapping(address => ActivityHistory) Tracking;
 
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
-        require(ActivityType <= 7 && ActivityType >= 1);
+        require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
         require(Minutes >= 1);
         if(ActivityType == 1){
             //Walking
