@@ -5,7 +5,7 @@ pragma solidity ^0.8.7;
 //ERC20 import (for Interfacing)
 import "StandardERC20.sol";
 
-contract PhysicalActivityMonitorGame {
+contract AGPD {
     address Zero = address(0);
 
 
