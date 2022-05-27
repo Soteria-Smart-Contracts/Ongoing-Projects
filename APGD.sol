@@ -11,6 +11,7 @@ contract AGPD {
     constructor(){
         //Deployment Constructors
         TypeMultiplier[1] = 3;
+        TypeMultiplier[2] = 6;
         
     }
 
