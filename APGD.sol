@@ -9,6 +9,8 @@ contract AGPD {
     address Zero = address(0);
 
     constructor(){
+        //Deployment Constructors
+        TypeMultiplier[1] = 3;
         
     }
 
