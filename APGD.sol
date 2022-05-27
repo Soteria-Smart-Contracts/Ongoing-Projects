@@ -8,6 +8,7 @@ import "StandardERC20.sol";
 contract PhysicalActivityMonitorGame {
     
     
+    
 
 
 }
