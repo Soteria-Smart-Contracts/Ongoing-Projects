@@ -8,6 +8,10 @@ import "StandardERC20.sol";
 contract AGPD {
     address Zero = address(0);
 
+    constructor(){
+        
+    }
+
     
 
     //Struct Declarations
