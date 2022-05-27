@@ -6,10 +6,11 @@ pragma solidity ^0.8.7;
 import "StandardERC20.sol";
 
 contract PhysicalActivityMonitorGame {
-    
+
 
     
-    
+
+
 
 
 }
