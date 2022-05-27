@@ -17,7 +17,6 @@ contract AGPD {
         TypeMultiplier[5] = 3;
         TypeMultiplier[6] = 5;
         TypeMultiplier[7] = 4;
-
     }
 
     
