@@ -36,7 +36,30 @@ contract AGPD {
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
         require(ActivityType <= 7 && ActivityType >= 1);
         require(Minutes >= 1);
-        
+        if(ActivityType == 1){
+            TokensMinted = Minutes * 1;
+        }
+        else if(ActivityType == 2){
+            TokensMinted = Minutes * 2;
+        }
+        else if(ActivityType == 3){
+            TokensMinted = Minutes * 3;
+        }
+        else if(ActivityType == 4){
+            TokensMinted = Minutes * 4;
+        }
+        else if(ActivityType == 5){
+            TokensMinted = Minutes * 5;
+        }
+        else if(ActivityType == 6){
+            TokensMinted = Minutes * 6;
+        }
+        else if(ActivityType == 7){
+            TokensMinted = Minutes * 7;
+        }
+        else{
+            TokensMinted = 0;
+        }
 
     }
 
