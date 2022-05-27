@@ -41,13 +41,15 @@ contract AGPD {
             TokensMinted = Minutes * 1;
         }
         else if(ActivityType == 2){
-            //
+            //Running
             TokensMinted = Minutes * 2;
         }
         else if(ActivityType == 3){
+            //Cycling
             TokensMinted = Minutes * 3;
         }
         else if(ActivityType == 4){
+            //Swimming
             TokensMinted = Minutes * 4;
         }
         else if(ActivityType == 5){
