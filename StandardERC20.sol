@@ -3,7 +3,7 @@
 pragma solidity ^0.8.4;
 
 
-contract ExpanseCash {
+contract Token {
     uint256 public TokenCap;
     uint256 public TotalSupply;
     string public name;
