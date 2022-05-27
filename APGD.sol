@@ -49,34 +49,8 @@ contract AGPD {
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
         require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
         require(Minutes >= 1);
-        if(ActivityType == 1){
-            //Walking
-            TokensMinted = Minutes * 3;
-        }
-        else if(ActivityType == 2){
-            //Running
-            TokensMinted = Minutes * 6;
-        }
-        else if(ActivityType == 3){
-            //Cycling
-            TokensMinted = Minutes * 5;
-        }
-        else if(ActivityType == 4){
-            //Swimming
-            TokensMinted = Minutes * 5;
-        }
-        else if(ActivityType == 5){
-            //Gym Workout
-            TokensMinted = Minutes * 3;
-        }
-        else if(ActivityType == 6){
-            //Team Sports
-            TokensMinted = Minutes * 5;
-        }
-        else if(ActivityType == 7){
-            //Other
-            TokensMinted = Minutes * 4;
-        }
+        
+        
 
     }
 
