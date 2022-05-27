@@ -46,11 +46,11 @@ contract AGPD {
         }
         else if(ActivityType == 3){
             //Cycling
-            TokensMinted = Minutes * 3;
+            TokensMinted = Minutes * 5;
         }
         else if(ActivityType == 4){
             //Swimming
-            TokensMinted = Minutes * 4;
+            TokensMinted = Minutes * 5;
         }
         else if(ActivityType == 5){
             //Gym Workout
