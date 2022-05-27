@@ -13,6 +13,7 @@ contract AGPD {
         TypeMultiplier[1] = 3;
         TypeMultiplier[2] = 6;
         TypeMultiplier[3] = 5;
+        
 
     }
 
@@ -68,11 +69,11 @@ contract AGPD {
         }
         else if(ActivityType == 6){
             //Team Sports
-            TokensMinted = Minutes * 6;
+            TokensMinted = Minutes * 5;
         }
         else if(ActivityType == 7){
             //Other
-            TokensMinted = Minutes * 7;
+            TokensMinted = Minutes * 4;
         }
 
     }
