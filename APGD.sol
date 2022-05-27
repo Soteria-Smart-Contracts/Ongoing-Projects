@@ -6,7 +6,7 @@ pragma solidity ^0.8.7;
 import "StandardERC20.sol";
 
 contract AGPD {
-    address Ether = address(0);
+    address HealthyEthersToken = address(0);
 
     constructor(){
         //Deployment Constructors
