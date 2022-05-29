@@ -24,7 +24,7 @@ contract HealtyEthers {
 
     mapping(address => mapping (address => uint256)) allowed;
     
-    mapping(address => uint)minter;
+    mapping(address => uint) public minter;
     
     constructor(uint256 _TokenCap, string memory _name, string memory _symbol){
     TokenCap = _TokenCap;
