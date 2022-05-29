@@ -7,6 +7,7 @@ import "StandardERC20.sol";
 
 contract AGPD {
     address HealthyEthers = address(0);
+    uint256 DailyLimit = 1080;
 
     constructor(){
         //Deployment Constructors
