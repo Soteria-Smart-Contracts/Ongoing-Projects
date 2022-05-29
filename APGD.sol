@@ -52,6 +52,7 @@ contract AGPD {
 
     //Mapping Declarations
     mapping (address => ActivityHistory) Tracking;
+    mapping (address => uint256) DailyLimitTracker;
     mapping (uint256 => uint256) TypeMultiplier;
     mapping (uint256 => string) TypeString;
 
@@ -60,7 +61,7 @@ contract AGPD {
         require(Minutes >= 1);
         
         uint256 TokensEarned = TypeMultiplier[ActivityType] * Minutes * 10000000000000000;
-        
+
         UpdateTrackingMinutes(ActivityType, Minutes);
 
         ERC20(HealthyEthers).Mint(msg.sender, TokensEarned);
