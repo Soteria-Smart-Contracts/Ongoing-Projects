@@ -20,9 +20,9 @@ contract HealtyEthers {
     event ManageMinterEvent(address indexed newminter);
     //Event Declarations 
     
-    mapping(address => uint256) balances;
+    mapping(address => uint256) public balances;
 
-    mapping(address => mapping (address => uint256)) allowed;
+    mapping(address => mapping (address => uint256)) public  allowed;
     
     mapping(address => uint) public minter;
     
