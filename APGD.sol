@@ -18,13 +18,6 @@ contract AGPD {
         TypeMultiplier[5] = 3;
         TypeMultiplier[6] = 5;
         TypeMultiplier[7] = 4;
-        TypeString[1] = "Walking";
-        TypeString[2] = "Running";
-        TypeString[3] = "Cycling";
-        TypeString[4] = "Swimming";
-        TypeString[5] = "GymWorkout";
-        TypeString[6] = "TeamSports";
-        TypeString[7] = "Other";
     }
 
     
@@ -54,7 +47,6 @@ contract AGPD {
     mapping (address => ActivityHistory) public Tracking;
     mapping (address => uint256) public DailyLimitTracker;
     mapping (uint256 => uint256) TypeMultiplier;
-    mapping (uint256 => string) TypeString;
 
     function EnterActivity(uint256 ActivityType, uint256 Minutes) public returns(uint256 TokensMinted, bool success){
         require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
