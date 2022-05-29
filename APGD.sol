@@ -85,33 +85,26 @@ contract AGPD {
         require(ActivityType <= 7 && ActivityType >= 1, "Activity Type is not valid");
         require(Minutes >= 1);
 
-        if (ActivityType == 1);
-        {
-            Tracking[msg.sender].Walking = Tracking[msg.sender].Walking + Minutes;
+        if (ActivityType == 1){
+            Tracking[msg.sender].Walking += Minutes;
         }
-        else if (ActivityType == 2);
-        {
-            Tracking[msg.sender].Running = Tracking[msg.sender].Running + Minutes;
+        else if (ActivityType == 2){
+            Tracking[msg.sender].Running += Minutes;
         }
-        else if (ActivityType == 3);
-        {
-            Tracking[msg.sender].Cycling = Tracking[msg.sender].Cycling + Minutes;
+        else if (ActivityType == 3){
+            Tracking[msg.sender].Cycling += Minutes;
         }
-        else if (ActivityType == 4);
-        {
-            Tracking[msg.sender].Swimming = Tracking[msg.sender].Swimming + Minutes;
+        else if (ActivityType == 4){
+            Tracking[msg.sender].Swimming += Minutes;
         }
-        else if (ActivityType == 5);
-        {
-            Tracking[msg.sender].GymWorkout = Tracking[msg.sender].GymWorkout + Minutes;
+        else if (ActivityType == 5){
+            Tracking[msg.sender].GymWorkout += Minutes;
         }
-        else if (ActivityType == 6);
-        {
-            Tracking[msg.sender].TeamSports = Tracking[msg.sender].TeamSports + Minutes;
+        else if (ActivityType == 6){
+            Tracking[msg.sender].TeamSports += Minutes;
         }
-        else if (ActivityType == 7);
-        {
-            Tracking[msg.sender].Other = Tracking[msg.sender].Other + Minutes;
+        else if (ActivityType == 7){
+            Tracking[msg.sender].Other += Minutes;
         }
     }
 
