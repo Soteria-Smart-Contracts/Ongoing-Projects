@@ -51,8 +51,8 @@ contract AGPD {
     // 7: Other
 
     //Mapping Declarations
-    mapping (address => ActivityHistory) Tracking;
-    mapping (address => uint256) DailyLimitTracker;
+    mapping (address => ActivityHistory) public Tracking;
+    mapping (address => uint256) public DailyLimitTracker;
     mapping (uint256 => uint256) TypeMultiplier;
     mapping (uint256 => string) TypeString;
 
