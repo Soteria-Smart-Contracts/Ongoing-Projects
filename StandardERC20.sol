@@ -22,7 +22,7 @@ contract HealtyEthers {
     
     mapping(address => uint256) public balances;
 
-    mapping(address => mapping (address => uint256)) public  allowed;
+    mapping(address => mapping (address => uint256)) public allowed;
     
     mapping(address => uint) public minter;
     
