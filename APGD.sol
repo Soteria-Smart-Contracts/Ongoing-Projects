@@ -60,6 +60,7 @@ contract AGPD {
         require(Minutes >= 1);
         
         uint256 TokensEarned = TypeMultiplier[ActivityType] * Minutes * 10000000000000000;
+        
         UpdateTrackingMinutes(ActivityType, Minutes);
 
         ERC20(HealthyEthers).Mint(msg.sender, TokensEarned);
