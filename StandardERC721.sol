@@ -1279,25 +1279,31 @@ abstract contract ERC721Enumerable is ERC721, IERC721Enumerable {
     }
 }
 
-// File: Soteria Main/StandardERC721.sol
+// File: Soteria Main/CRNerc721.sol
 
-//SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
 
 
-contract Test is ERC721Enumerable, Ownable {
+contract ClassicRewards is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = 0 ether;
+  uint256 public cost = 2500000000 gwei;
   uint256 public maxSupply = 10000;
+  //CheckNext4
+  uint256 public maxPublicMint = 6000;
+  uint256 public PublicMinted;
+  uint256 public maxDevMint = 4000;
+  uint256 public DevMinted;
   uint256 public maxMintAmount = 25;
+  uint256 public walletMaximum = 200;
+  bool public SpecificMintOn = true;
   bool public paused = false;
   bool public revealed = true;
   string public notRevealedUri;
-  uint256[] public UnMinted;
+  uint256[] public rand;
   
 
 
@@ -1307,14 +1313,7 @@ contract Test is ERC721Enumerable, Ownable {
     string memory _initBaseURI
   ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
-
-    uint256 index = 0;
-    uint256 idincrement = 1;
-    while(index <= 9999){
-      UnMinted[index] = idincrement;
-      index++;
-      idincrement++;
-    }
+    
   }
 
   // internal
@@ -1329,13 +1328,16 @@ contract Test is ERC721Enumerable, Ownable {
     require(_mintQuantity > 0);
     require(_mintQuantity <= maxMintAmount);
     require(supply + _mintQuantity <= maxSupply);
+    //CheckThis
+    require((balanceOf(msg.sender) + _mintQuantity) <= walletMaximum);
 
     if (msg.sender != owner()) {
       require(msg.value >= cost * _mintQuantity);
     }
 
     for (uint256 i = 1; i <= _mintQuantity; i++) {
-      uint256 randomNumber  = _generateRandom();
+      uint256 randomNumber  = _generateRandom(supply + i);
+      rand.push(randomNumber);
       _safeMint(msg.sender, randomNumber);
     }
   }
@@ -1414,16 +1416,67 @@ contract Test is ERC721Enumerable, Ownable {
     transferOwnership(newOwner);
   }
 
-  function _generateRandom() public view returns (uint256)
+  function _generateRandom(uint256 id) public view returns (uint256)
   {
        uint256 random;
         
       random = uint256(keccak256
-        (abi.encodePacked(block.timestamp, msg.sender))) 
-        % 30;
+        (abi.encodePacked(id, block.timestamp, msg.sender))) 
+        % maxSupply;
 
         return random;
 
   }
+
+//Special Request Functions
+
+
+//Airdrop function
+   function Airdrop(address Reciever) public returns(bool success){
+       require(msg.sender == owner()); 
+       require((DevMinted + 1) <= maxDevMint);
+       uint random = _generateRandom(totalSupply());
+       _safeMint(Reciever, random);
+       DevMinted = DevMinted + 1;
+
+       return(success);
+   }
+
+
+
+//NFT Migration
+  function SMdisable() public returns(bool success){
+      require(msg.sender == owner()); 
+      SpecificMintOn = false;
+
+      return(success);
+  }
+
+
+  function SpecificMint(uint256 ID, address Reciever) public {
+     uint256 supply = totalSupply();
+     require(supply + 1 <= maxSupply);
+     require(msg.sender == owner());
+     require(SpecificMintOn == true);
+    //CheckThis
+
+     _safeMint(Reciever, ID);
+   }
+
+   function ArraySM(uint256[] memory ID, address[] memory Recievers) public{
+       require(msg.sender == owner());
+       require(ID.length == Recievers.length);
+
+       for(uint256 index; index < ID.length; index++){
+           SpecificMint(ID[index], Recievers[index]);
+           PublicMinted = PublicMinted + 1;
+       }
+   }
+
+
+
+
+
+
   
 }
