@@ -1437,7 +1437,7 @@ function CreateUnMintedArray() public return(uint16){
       index++;
       idincrement++;
     }
-    return
+    return idincrement;
 }
 
 
