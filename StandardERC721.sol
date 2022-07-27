@@ -1437,7 +1437,6 @@ function CreateUnMintedArray() public {
       index++;
       idincrement++;
     }
-    UnMinted = temp;
 }
 
 
