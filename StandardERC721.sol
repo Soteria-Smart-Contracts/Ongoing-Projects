@@ -1433,7 +1433,7 @@ function CreateUnMintedArray() public returns(uint16){
     uint16 index = 0;
     uint16 idincrement = 1;
     while(index <= 2){
-      UnMinted[index] = (idincrement);
+      UnMinted[index] = idincrement;
       index++;
       idincrement++;
     }
