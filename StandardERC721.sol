@@ -1303,7 +1303,7 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
   bool public paused = false;
   bool public revealed = true;
   string public notRevealedUri;
-  uint256[] public UnMinted;
+  uint16[] public UnMinted;
   
 
 
