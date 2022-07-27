@@ -6,7 +6,7 @@ contract ArrayTest{
 
   function IndexArray() public returns(uint256){
     uint16 index;
-    while(index <= 10000){
+    while(index <= 1000){
       Array.push(index);
       index++;
     }
