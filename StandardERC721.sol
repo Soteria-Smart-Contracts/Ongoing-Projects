@@ -1429,7 +1429,7 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
 //Special Request Functions
 
 
-function create
+function CreateUnmintedArray
 
 
 //Airdrop function
