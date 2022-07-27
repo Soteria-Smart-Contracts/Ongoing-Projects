@@ -1303,7 +1303,7 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
   bool public paused = false;
   bool public revealed = true;
   string public notRevealedUri;
-  uint256[] public rand;
+  uint256[] public UnMinted;
   
 
 
@@ -1337,7 +1337,6 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
 
     for (uint256 i = 1; i <= _mintQuantity; i++) {
       uint256 randomNumber  = _generateRandom(supply + i);
-      rand.push(randomNumber);
       _safeMint(msg.sender, randomNumber);
     }
   }
