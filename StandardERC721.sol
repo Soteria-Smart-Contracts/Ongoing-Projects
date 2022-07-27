@@ -1429,7 +1429,7 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
 //Special Request Functions
 
 
-function CreateUnMintedArray() public return({
+function CreateUnMintedArray() public return(uint16){
     uint16 index = 0;
     uint16 idincrement = 1;
     while(index <= 10){
@@ -1437,7 +1437,7 @@ function CreateUnMintedArray() public return({
       index++;
       idincrement++;
     }
-    
+    return
 }
 
 
