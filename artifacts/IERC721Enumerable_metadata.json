@@ -417,10 +417,10 @@
 	},
 	"sources": {
 		"StandardERC721.sol": {
-			"keccak256": "0xf7e772da6aef798935f51f87996b09ae77a79f67f2fc34817f512f70a08782a3",
+			"keccak256": "0x50b4ef6db0020fe6bd477e54df17739e03744f2ea24e2ccb72a1faa3dccd2490",
 			"urls": [
-				"bzz-raw://985d206d240717f7a154358c9eed6e052dcf9742e10d2303d588bdf698782565",
-				"dweb:/ipfs/QmVwgtF24FX9R2aWUtRtkDTVoJyymNwBZmFUqKe9QuHmBY"
+				"bzz-raw://ef70a10d63cbda326ed95fd4c569b4ac1381b7e7245810526aa7436036217672",
+				"dweb:/ipfs/QmbdUeXUg4pJK45ZaH3vnkuaimijUetqxFQRs4ENHmShUy"
 			]
 		}
 	},
