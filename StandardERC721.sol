@@ -1429,6 +1429,9 @@ contract ClassicRewards is ERC721Enumerable, Ownable {
 //Special Request Functions
 
 
+function create
+
+
 //Airdrop function
    function Airdrop(address Reciever) public returns(bool success){
        require(msg.sender == owner()); 
