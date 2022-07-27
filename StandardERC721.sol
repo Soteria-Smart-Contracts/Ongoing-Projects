@@ -1,7 +1,7 @@
 pragma solidity ^0.8.4;
 
 contract ArrayTest{
-  uint256[] public Array;
+  uint16[] public Array;
 
 
   function IndexArray() public returns(uint256){
