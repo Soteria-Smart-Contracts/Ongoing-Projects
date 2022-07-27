@@ -1307,6 +1307,14 @@ contract Test is ERC721Enumerable, Ownable {
     string memory _initBaseURI
   ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
+
+    uint256 index = 0;
+    uint256 idincrement = 1;
+    while(index <= 9999){
+      UnMinted[index] = idincrement;
+      index++;
+      idincrement++;
+    }
   }
 
   // internal
