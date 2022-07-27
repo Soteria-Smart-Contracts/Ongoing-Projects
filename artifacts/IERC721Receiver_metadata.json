@@ -74,11 +74,10 @@
 	},
 	"sources": {
 		"StandardERC721.sol": {
-			"keccak256": "0x2bc617a97432521b6c382c090b3080799b2ea12629ab7b52f1e80423070e5246",
-			"license": "MIT",
+			"keccak256": "0x00251f3d7e055a05bbd9200f094ba791e50b89144841792427c82c64b3636ce0",
 			"urls": [
-				"bzz-raw://18137376fdd1ae52869ff7377dbe9a0f858e69ed707f7223b08c389eee349dfc",
-				"dweb:/ipfs/QmedP2GenVWbCDhvyQ8vjhDUbLyZwxc2wmdBafKMjZWT2S"
+				"bzz-raw://d2e4dc858d5467b3d65f08e9283c7e8bdc1b65c5db62929c1e298a42507b212e",
+				"dweb:/ipfs/QmY3KsxNJKiqKQuRBj7CUKdwBXzPGb8zZuA6M78vbXboCh"
 			]
 		}
 	},
