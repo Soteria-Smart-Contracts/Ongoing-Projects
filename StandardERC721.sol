@@ -1433,7 +1433,7 @@ function CreateUnMintedArray() public {
     uint256 index = 0;
     uint256 idincrement = 1;
     while(index <= 9999){
-      UnMinted[].push(idincrement;
+      UnMinted.push(idincrement);
       index++;
       idincrement++;
     }
